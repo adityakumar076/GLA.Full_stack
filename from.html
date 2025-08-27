@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>From</title>
+  <style>
+        body {
+            background-color: #00d8ff;
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        h1{
+            text-align: center;
+        }
+        form {
+            background: #fff;
+            padding: 32px 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px 8px;
+        }
+        label {
+            font-weight: 600;
+            color: #333;
+        }
+        #ab {
+            margin-top: 18px;
+            margin-left: 0;
+            width: 100%;
+            padding: 10px 0;
+            background: #00bcd4;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            cursor: pointer;
+            transition-delay: 0.5s;
+        }
+        #ab:hover {
+            background: #0097a7;
+        }    
+    </style>
+</head>
+<body>
+    <form>
+        <h1>Registration Form</h1>
+        <table>
+            <tr>
+                <td><label>Users name:</label></td>
+                <td><input type="username" placeholder="Enter the username" required></td>
+            </tr>
+            <tr>
+                <td><label>  Email*:</label></td>
+                <td><input type="email" placeholder="Enter the email" required></td>
+            </tr>
+            <tr>
+                <td><label>Password*:</label></td>
+                <td><input type="password" placeholder="Enter your password" required></td>
+            </tr>
+            <tr>
+                <td><label>Confirm Password:</label></td>
+                <td><input type="password" placeholder="Confirm password" required></td>
+            </tr>
+            <tr>
+                <td><label>Contact No:</label></td>
+                <td><input type="tel" placeholder="Enter your number" pattern="[0-9]{10}" required></td>
+            </tr>
+            <tr>
+                <td><label>Home address:</label></td>
+                <td><input type="text" placeholder="Enter Address"></td>
+            </tr>
+        </table>
+        <input type="submit" id="ab">
+    
+
+    </form>
+</body>
+</html>
