@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1.6;
+            background: color #f9f9f9;
+            color: #333;
+
+        }
+        header{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 1em;
+        }
+        header nav ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            margin: 0;
+            
+        }
+        header nav ul li{
+            margin-right: 20px;
+        }
+        header nav a{
+            text-decoration: none;
+            color: #fff;
+            
+        }
+        .hero{
+            background-color: rgb(207, 183, 241);
+            text-align: center;
+            padding: 3em;
+        }
+        .heros{
+            display: flex;
+            background-color: antiquewhite;
+            justify-content: center;
+            /* flex-wrap: wrap; */
+        }
+        .Feature{
+            margin: 20px;
+            padding: 20px;
+            width:calc(33.33% - 40px);
+            border: 2px solid black;
+            box-shadow: 0 0 10px;
+            background-color: rgb(99, 189, 175);
+        }
+        footer{
+            background-color: #333;
+            text-align: center;
+            align-items: center;
+            color:white ;
+        }
+
+        @media only screen and (max-width: 700px) {
+        .Feature {
+            width: calc(50% - 20px);
+            }
+        }
+
+        @media only screen and (max-width: 450px) {
+        header nav ul {
+            flex-direction: column;
+            align-items: center;
+            }
+
+        .Feature {
+            width: 100%;
+            margin: 10px 0;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+        <li> <a href="#">Home</a></li>
+        <li><a href="#">Servies</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Welcome to our Website</h1>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Est eaque temporibus quisquam distinctio 
+                corrupti vel eius, odit vitae id excepturi eveniet eum sequi rem, fugit ab sapiente rerum provident corporis!</p>
+        </section>
+        <section class="heros">
+            <div class="Feature">
+                <h2>Feature 1</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam voluptate sequi animi consequuntur omnis mollitia quibusdam 
+                    natus id maxime, molestias corporis quo provident, minus odio dignissimos soluta inventore. Fugit, ea.</p>
+            </div >
+            <div class="Feature">
+                <h2>Feature 2</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim aspernatur tenetur reiciendis culpa odit corporis. Veniam vero ex nulla 
+                deleniti est corporis soluta autem perferendis architecto! Quidem, modi doloribus. Distinctio.</p>
+            </div>
+            <div class="Feature">
+                <h2>Feature 3</h2>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vitae nam eos vero dolorem doloribus, itaque nostrum minus, 
+                    asperiores odio saepe nesciunt modi ut, non voluptatum. Quos aperiam magnam ea animi.</p>
+            </div>
+        </section>
+
+    </main>
+    <footer>
+            <p>GLA&copf;right reserve 2025</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Rotating Ring</title>
+<style>
+    body{
+        background-color: black;
+    }
+    .outer-ring {
+        height: 400px;
+        width: 400px;
+        border-radius: 50%;
+        position: relative;
+        margin: 50px auto;
+        background: -webkit-radial-gradient(
+    center,
+    circle,
+    #fff700 0%,     /* bright yellow core */
+    #ffae00 40%,    /* warm orange mid */
+    #ff4500 70%,    /* reddish outer glow */
+    transparent 100% /* fade to transparent */
+    );
+        box-shadow: 0px 0px 30px 10px white;
+
+    }
+
+    .rotator {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        animation: rotation 5s linear infinite;
+        transform-origin: center;
+    }
+
+    .inner-ring {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        background-color: rgb(107, 105, 252);
+        border-radius: 50%;
+        top: 0;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-shadow: 0px 0px 30px 10px white;
+    }
+
+    @keyframes rotation {
+        0% {
+            transform: rotate(0deg);
+        }
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+</style>
+</head>
+<body>
+    <div class="outer-ring">
+    <div class="rotator">
+    <div class="inner-ring"></div>
+    </div>
+  </div>
+</body>
+</html>

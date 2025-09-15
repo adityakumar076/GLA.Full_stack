@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Cloud Design</title>
+<style>
+        * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        }
+
+        body {
+        height: 100vh;
+        background: linear-gradient(to top, #aee2ff, #e0f7ff);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: sans-serif;
+        }
+
+        .cant {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background-color: #ffffffaa;
+        border-radius: 50px;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .box {
+        height: 100px;
+        width: 100px;
+        background: radial-gradient(circle at 30% 30%, #ffffff, #d0f0ff);
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        border: none;
+        }
+
+        #b {
+        height: 80px;
+        width: 80px;
+        background: radial-gradient(circle at 30% 30%, #ffffff, #b0e0ff);
+        border-radius: 50%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+</style>
+</head>
+    <body>
+    <div class="cant">
+        <div class="box"></div>
+        <div class="box" id="b"></div>
+        <div class="box"></div>
+    </div>
+    </body>
+</html>

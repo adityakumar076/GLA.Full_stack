@@ -1,0 +1,16 @@
+Attribute
+1.text
+2.name
+3.value
+4.class
+5.Id
+6.Auto-complete
+7.Auto-focus
+8.reuire
+9.Pattern
+10.disabled
+11.Hidden
+12.Select
+13.DAta-list
+14.Placeholder
+list-type 3-
